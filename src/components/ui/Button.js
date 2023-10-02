@@ -5,13 +5,14 @@ const StyledButton = styled.button`
   padding: 8px 16px;
   font-size: 16px;
   border-withh: 1px;
+  border-radius: 8px;
   cursor: pointer;
 `;
 
 function Button(props) {
 
   const {title, onClick} = props;
-  return <StyledButton onClcick={onClick}>{title || "button"}</StyledButton>
+  return <StyledButton onClick={onClick}>{title || "button"}</StyledButton>
 }
 
 
