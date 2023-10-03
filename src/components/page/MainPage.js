@@ -1,9 +1,9 @@
-import PostList from 'components/list/PostList';
-import Button from 'components/ui/Button';
+import PostList from '../list/PostList';
+import Button from '../ui/Button';
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
-import data from 'data.json';
+import data from '../../data.json';
 
 const Wrapper = styled.div`
     padding: 16px;

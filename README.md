@@ -1,10 +1,10 @@
-# Getting Started with Create React App
+# 미니 블로그 App (회원가입/로그인/글쓰기/댓글남기기)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+이 프로젝트는 미니 블로그를 만드는 프로젝트입니다. Github 링크는 추후에 업데이트 하겠습니다.
 
-## Available Scripts
+## 사용기술
 
-In the project directory, you can run:
+React.js, Styled.components .. 
 
 ### `npm start`
 

@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
 import styled from 'styled-components';
-import data from 'data.json';
-import Button from 'components/ui/Button';
-import CommentList from 'components/list/CommentList';
-import TextInput from 'components/ui/TextInput';
+import data from '../../data.json';
+import Button from '../ui/Button';
+import CommentList from '../list/CommentList';
+import TextInput from '../ui/TextInput';
 
 const Wrapper = styled.div`
     padding: 16px;
@@ -13,6 +13,7 @@ const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-family: 'Nanum Pen Script', cursive;
 `;
 
 const Container = styled.div`
@@ -33,8 +34,10 @@ const PostContainer = styled.div`
 `;
 
 const TitleText = styled.p`
-    font-size: 28px;
+    font-size: 35px;
     font-weight: 500;
+    color: red;
+    
 `;
 
 const ContentText = styled.p`
@@ -68,6 +71,7 @@ function PostViewPage(props) {
           onClick={() => {
             navigate("/")
           }}
+       
         />
         <PostContainer>
           <TitleText>{post.title}</TitleText>
@@ -89,6 +93,7 @@ function PostViewPage(props) {
           onClick={() =>{
             navigate("/");
           }}
+      
         />  
               
       </Container>
